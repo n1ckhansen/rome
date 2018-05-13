@@ -4,7 +4,6 @@ node {
    checkout scm
 
    stage 'Build'
-   def mvnHome = tool 'Maven 3.3.9'
-   mvn clean install
+   mvn clean javadoc install
 
 }
